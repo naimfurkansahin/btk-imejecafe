@@ -218,6 +218,13 @@ Teşekkür ederim.`;
     });
   }
 
+  // Geçmiş tarihlerin seçilmesini engelle (Bugünün tarihini min yap)
+  const dateInput = document.getElementById('resDate');
+  if (dateInput) {
+    const todayStr = new Date().toISOString().split('T')[0];
+    dateInput.min = todayStr;
+  }
+
   /* ==========================================================================
      4. MOBİL MENÜ ÇEKMECESİ KONTROLÜ
      ========================================================================== */
@@ -246,6 +253,45 @@ Teşekkür ederim.`;
         menuToggle.classList.remove('open');
         menuToggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Menü dışına tıklanınca çekmeceyi kapat
+    document.addEventListener('click', (e) => {
+      if (mobileDrawer.classList.contains('open')) {
+        if (!mobileDrawer.contains(e.target) && !menuToggle.contains(e.target)) {
+          mobileDrawer.classList.remove('open');
+          menuToggle.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      }
+    });
+
+    // ESC tuşuna basıldığında çekmeceyi kapat
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        mobileDrawer.classList.remove('open');
+        menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+  /* ==========================================================================
+     5. SAĞ ÜSTTEKİ TALEP ET BUTONU İÇİN DİKKAT ÇEKİCİ ODAK EFEKTİ
+     ========================================================================== */
+  const headerCtaBtn = document.getElementById('headerCtaBtn');
+  const reservationCard = document.getElementById('rezervasyon');
+  if (headerCtaBtn && reservationCard) {
+    headerCtaBtn.addEventListener('click', () => {
+      setTimeout(() => {
+        reservationCard.style.transition = 'box-shadow 0.4s ease, border-color 0.4s ease';
+        reservationCard.style.borderColor = 'var(--color-caramel)';
+        reservationCard.style.boxShadow = '0 0 0 4px rgba(160, 82, 45, 0.25), 0 10px 30px rgba(160, 82, 45, 0.15)';
+        setTimeout(() => {
+          reservationCard.style.boxShadow = '';
+          reservationCard.style.borderColor = '';
+        }, 1500);
+      }, 350);
     });
   }
 

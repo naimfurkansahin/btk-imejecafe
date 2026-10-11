@@ -66,7 +66,10 @@
       </nav>
 
       <div class="header-action-wrap">
-        <a href="#rezervasyon" class="btn btn-accent btn-header">Masa Talep Et</a>
+        <a href="#rezervasyon" class="btn btn-accent btn-header" id="headerCtaBtn" aria-label="Grup Masası Talep Et">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+          <span class="btn-header-text">Masa Talep Et</span>
+        </a>
         <!-- Mobil Menü Düğmesi -->
         <button class="mobile-menu-btn" id="menuToggle" aria-label="Menüyü aç veya kapat" aria-expanded="false">
           <span class="menu-bar"></span>
@@ -81,7 +84,7 @@
       <!-- Mobil İMEJE Takımı Vurgusu -->
       <div class="mobile-drawer-imeje">
         <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" class="drawer-imeje-box">
-          <span class="drawer-imeje-tag">GENÇ2030 ATÖLYE</span>
+          <span class="drawer-imeje-tag">BTK & GSB • GENÇ2030</span>
           <p>BU SİTE <strong>İMEJE Takımı</strong> tarafından <strong>GENÇ2030</strong> atölyede üretilmiştir.</p>
           <span class="drawer-imeje-link">imejeteam.com ➔</span>
         </a>
@@ -103,16 +106,37 @@
   <main>
     <!-- 1. BÖLÜM: ANA SAYFA (HERO) -->
     <section class="section-hero" id="hero">
-      <div class="container hero-container">
+      <div class="container hero-wrapper">
         
-        <div class="hero-text-content">
-          <!-- Dinamik Açık / Kapalı Rozeti -->
-          <div class="status-badge-container">
-            <div class="status-badge" id="liveStatusBadge">
-              <span class="status-indicator-dot" id="statusDot"></span>
-              <span class="status-badge-text" id="statusText">Çalışma saatleri kontrol ediliyor...</span>
-            </div>
+        <!-- ANASAYFADA EN BAŞTA: BTK AKADEMİ & GSB VE İMEJE TAKIMI RESMİ BAĞLANTILARI -->
+        <div class="homepage-top-action-bar">
+          <div class="top-bar-left">
+            <span class="partner-pulse-dot"></span>
+            <span class="partner-text"><strong>BTK Akademi & GSB</strong> iş birliğiyle <strong>Genç2030</strong> Atölye Projesi</span>
           </div>
+          <div class="top-bar-buttons">
+            <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" class="btn-hero-top btn-top-imeje" title="İMEJE Takımı Resmi Web Sitesi">
+              <span class="btn-icon">🌐</span>
+              <span>İMEJE Takımı (<strong>imejeteam.com</strong>)</span>
+              <span class="btn-ext-arrow">↗</span>
+            </a>
+            <a href="https://github.com/naimfurkansahin/btk-imejecafe" target="_blank" rel="noopener noreferrer" class="btn-hero-top btn-top-github" title="Proje Kaynak Kodları (GitHub)">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Kaynak Kodu (GitHub)</span>
+              <span class="btn-ext-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-container">
+          <div class="hero-text-content">
+            <!-- Dinamik Açık / Kapalı Rozeti -->
+            <div class="status-badge-container">
+              <div class="status-badge" id="liveStatusBadge">
+                <span class="status-indicator-dot" id="statusDot"></span>
+                <span class="status-badge-text" id="statusText">Çalışma saatleri kontrol ediliyor...</span>
+              </div>
+            </div>
 
           <!-- Başlık ve Yanındaki Kocaman İMEJE Takımı Kutusu -->
           <div class="hero-heading-group">
@@ -683,7 +707,7 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <div class="footer-workshop-note">
-        Bu site <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #E8B788; text-decoration: underline;"><strong>İMEJE Takımı</strong></a> tarafından <strong>GENÇ2030</strong> atölyesinde üretilmiştir. • <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; font-weight: 600;">imejeteam.com ↗</a>
+        Bu site <strong>BTK Akademi & GSB</strong> iş birliğiyle <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #E8B788; text-decoration: underline;"><strong>İMEJE Takımı</strong></a> tarafından <strong>GENÇ2030</strong> atölyesinde üretilmiştir. • <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; font-weight: 600;">imejeteam.com ↗</a>
       </div>
       <div class="footer-meta">
         <span>İmeje Lounge Cafe • Trabzon Söğütlü</span>
