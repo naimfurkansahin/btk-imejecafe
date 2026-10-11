@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İmeje Lounge Cafe - Trabzon Söğütlü'de, Trabzon Üniversitesi'ne 5 dakika yürüme mesafesinde iyi kahve, sessiz ders çalışma ortamı ve ev yapımı tatlılar.">
+  <meta name="theme-color" content="#FBF7F1">
+  <title>İmeje Lounge Cafe | Trabzon Söğütlü - Kahve & Sessiz Çalışma Alanı</title>
+
+  <!-- WhatsApp & Sosyal Medya Paylaşım Bannerı (Open Graph & Twitter Card) -->
+  <meta property="og:title" content="İmeje Lounge Cafe | Trabzon Söğütlü">
+  <meta property="og:description" content="Trabzon Üniversitesi'ne 5 dakika yürüme mesafesinde nitelikli kahve, sessiz ders çalışma ortamı ve ev yapımı tatlılar. 'Kahven hazır, köşen sessiz.'">
+  <meta property="og:image" content="banner.jpg">
+  <meta property="og:image:secure_url" content="banner.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1000">
+  <meta property="og:image:height" content="1000">
+  <meta property="og:image:alt" content="İmeje Lounge Cafe Logo Banner">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="İmeje Lounge Cafe">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İmeje Lounge Cafe | Trabzon Söğütlü">
+  <meta name="twitter:description" content="Kahven hazır, köşen sessiz. Trabzon Üniversitesi'ne 5 dakika mesafede sessiz çalışma alanı.">
+  <meta name="twitter:image" content="banner.jpg">
+
+  <!-- Tarayıcı İkonu (Favicon) -->
+  <link rel="icon" type="image/jpeg" href="banner.jpg">
+
+  <!-- Google Fonts: Fraunces (Başlıklar) & Inter (Gövde Metinleri) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sabit Üst Menü (Sticky Header) -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <div class="header-brand-wrap">
+        <a href="#hero" class="brand-logo" aria-label="İmeje Lounge Cafe Ana Sayfa">
+          <img src="banner.jpg" alt="İmeje Lounge Cafe Logo" class="brand-logo-img">
+          <div>
+            <span class="brand-title">İmeje Lounge Cafe</span>
+            <span class="brand-location">Söğütlü • Trabzon</span>
+          </div>
+        </a>
+        <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" class="header-imeje-badge" title="İMEJE Takımı Web Sitesi">
+          <span class="imeje-dot"></span>
+          <span>BU SİTE <strong>İMEJE Takımı</strong> tarafından <strong>GENÇ2030</strong> atölyede üretilmiştir. <u>imejeteam.com</u></span>
+        </a>
+      </div>
+
+      <!-- Masaüstü Gezinti -->
+      <nav class="desktop-navigation" aria-label="Ana Menü">
+        <ul class="nav-menu">
+          <li><a href="#hero" class="nav-item">Ana Sayfa</a></li>
+          <li><a href="#menu" class="nav-item">Menü</a></li>
+          <li><a href="#calisma-alani" class="nav-item">Çalışma Alanı</a></li>
+          <li><a href="#hakkimizda" class="nav-item">Hakkımızda</a></li>
+          <li><a href="#iletisim" class="nav-item">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-action-wrap">
+        <a href="#rezervasyon" class="btn btn-accent btn-header">Masa Talep Et</a>
+        <!-- Mobil Menü Düğmesi -->
+        <button class="mobile-menu-btn" id="menuToggle" aria-label="Menüyü aç veya kapat" aria-expanded="false">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobil Açılır Menü Çekmecesi -->
+    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobil Gezinti Menüsü">
+      <!-- Mobil İMEJE Takımı Vurgusu -->
+      <div class="mobile-drawer-imeje">
+        <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" class="drawer-imeje-box">
+          <span class="drawer-imeje-tag">GENÇ2030 ATÖLYE</span>
+          <p>BU SİTE <strong>İMEJE Takımı</strong> tarafından <strong>GENÇ2030</strong> atölyede üretilmiştir.</p>
+          <span class="drawer-imeje-link">imejeteam.com ➔</span>
+        </a>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Ana Sayfa</a></li>
+        <li><a href="#menu" class="mobile-nav-link">Menü</a></li>
+        <li><a href="#calisma-alani" class="mobile-nav-link">Çalışma Alanı</a></li>
+        <li><a href="#hakkimizda" class="mobile-nav-link">Hakkımızda</a></li>
+        <li><a href="#iletisim" class="mobile-nav-link">İletişim</a></li>
+      </ul>
+      <div class="mobile-drawer-cta">
+        <a href="#rezervasyon" class="btn btn-accent btn-block">Grup Masası Talep Et</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. BÖLÜM: ANA SAYFA (HERO) -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-text-content">
+          <!-- Dinamik Açık / Kapalı Rozeti -->
+          <div class="status-badge-container">
+            <div class="status-badge" id="liveStatusBadge">
+              <span class="status-indicator-dot" id="statusDot"></span>
+              <span class="status-badge-text" id="statusText">Çalışma saatleri kontrol ediliyor...</span>
+            </div>
+          </div>
+
+          <!-- Başlık ve Yanındaki Kocaman İMEJE Takımı Kutusu -->
+          <div class="hero-heading-group">
+            <h1 class="hero-heading">
+              Kahven hazır, <br>
+              <span class="hero-heading-italic">köşen sessiz.</span>
+            </h1>
+
+            <!-- BAŞLIĞIN YANINDAKİ KOCAMAN İMEJE TAKIMI & GENÇ2030 VURGUSU -->
+            <div class="imeje-prominent-banner">
+              <div class="imeje-banner-top">
+                <span class="imeje-badge-pill">GENÇ2030 ATÖLYE PROJESİ</span>
+                <span class="imeje-team-name">İMEJE TAKIMI</span>
+              </div>
+              <p class="imeje-banner-statement">
+                BU SİTE <strong>İMEJE Takımı</strong> tarafından <strong>GENÇ2030</strong> atölyede üretilmiştir.
+              </p>
+              <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" class="imeje-cta-button">
+                <span>Resmi Sitemizi Ziyaret Edin: <strong>imejeteam.com</strong></span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            </div>
+          </div>
+
+          <p class="hero-subtext">
+            Trabzon Söğütlü'de, Trabzon Üniversitesi'ne sadece 5 dakika yürüme mesafesinde. Sınav haftalarında veya günlük çalışmalarınızda odaklanabileceğiniz huzurlu bir kütüphane köşesi ve taze demlenmiş nitelikli kahveler.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-accent btn-lg">Menüyü ve Fiyatları Gör</a>
+            <a href="#rezervasyon" class="btn btn-outline btn-lg">Grup Masası Talep Et</a>
+          </div>
+
+          <div class="hero-meta-strip">
+            <div class="meta-item">
+              <span class="meta-icon">📍</span>
+              <span>Trabzon Üniversitesi'ne 5 Dk</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🔌</span>
+              <span>Tüm Masalarda Priz</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">📶</span>
+              <span>Hızlı & Kesintisiz Wi-Fi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sade ve Sıcak İllüstrasyon (Stok fotoğrafsız, minimal SVG çizim) -->
+        <div class="hero-illustration-wrap">
+          <div class="illustration-card">
+            <svg class="coffee-book-art" viewBox="0 0 420 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Kahve fincanı ve açık kitap çizimi">
+              <!-- Zemin Yumuşak Daire -->
+              <circle cx="210" cy="180" r="140" fill="#F4ECE1" />
+              <circle cx="210" cy="180" r="115" stroke="#EADBCE" stroke-width="2" stroke-dasharray="6 6" />
+              
+              <!-- Masa Çizgisi -->
+              <path d="M70 270H350" stroke="#A0522D" stroke-width="4" stroke-linecap="round"/>
+
+              <!-- Açık Kitap Çizimi -->
+              <path d="M120 270C145 250 185 248 210 252C235 248 275 250 300 270C270 266 235 264 210 270C185 264 150 266 120 270Z" fill="#FFFFFF" stroke="#2F2219" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M210 252V270" stroke="#A0522D" stroke-width="3"/>
+              <!-- Kitap Sayfası Çizgileri -->
+              <path d="M145 258C162 255 185 255 198 257" stroke="#EADBCE" stroke-width="2" stroke-linecap="round"/>
+              <path d="M142 263C160 260 185 260 200 262" stroke="#EADBCE" stroke-width="2" stroke-linecap="round"/>
+              <path d="M222 257C235 255 258 255 275 258" stroke="#EADBCE" stroke-width="2" stroke-linecap="round"/>
+              <path d="M220 262C235 260 260 260 278 263" stroke="#EADBCE" stroke-width="2" stroke-linecap="round"/>
+
+              <!-- Kahve Fincanı Tabağı -->
+              <ellipse cx="210" cy="215" rx="55" ry="12" fill="#EADBCE" stroke="#2F2219" stroke-width="3"/>
+              
+              <!-- Kahve Fincanı Gövdesi -->
+              <path d="M175 160H245C245 195 235 212 210 212C185 212 175 195 175 160Z" fill="#FFFFFF" stroke="#2F2219" stroke-width="3" stroke-linejoin="round"/>
+              
+              <!-- Kahve Yüzeyi -->
+              <ellipse cx="210" cy="162" rx="30" ry="8" fill="#A0522D"/>
+              <ellipse cx="210" cy="162" rx="20" ry="5" fill="#5C4A3E"/>
+
+              <!-- Fincan Kulpu -->
+              <path d="M245 170C258 170 266 178 266 188C266 198 256 204 242 203" stroke="#2F2219" stroke-width="3" stroke-linecap="round"/>
+
+              <!-- Kahve Dumanı (Minimalist & Yumuşak) -->
+              <path d="M198 142C192 130 204 120 198 108" stroke="#A0522D" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+              <path d="M210 138C204 125 216 114 210 100" stroke="#4F6B57" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M222 142C216 130 228 120 222 108" stroke="#A0522D" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 3"/>
+
+              <!-- Adaçayı Yaprak Süslemesi -->
+              <path d="M110 240C100 225 110 210 120 205C122 220 118 232 110 240Z" fill="#4F6B57" opacity="0.85"/>
+              <path d="M124 236C122 220 134 212 142 212C138 226 132 232 124 236Z" fill="#4F6B57" opacity="0.6"/>
+              <path d="M106 242C118 235 125 230 132 224" stroke="#2F2219" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div class="illustration-caption">
+              <span class="caption-quote">"Sessizlikte demlenen fikirler."</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. BÖLÜM: MENÜ VE FİYATLAR -->
+    <section class="section-menu" id="menu">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="section-tag">GÜNCEL & ŞEFFAF FİYATLAR</span>
+          <h2 class="section-title">Kahve ve Lezzet Menüsü</h2>
+          <p class="section-desc">
+            Yerel kavurucumuzdan haftalık gelen taze Arabica çekirdekleri ve her sabah mutfağımızda pişen tatlılarımız.
+          </p>
+        </div>
+
+        <!-- Öğrenci İndirimi Kartı -->
+        <div class="student-discount-banner">
+          <div class="discount-icon">🎓</div>
+          <div class="discount-text">
+            <strong>Öğrenci Dostu Kampüs Fiyatları:</strong> Geçerli öğrenci kimliğini gösteren tüm misafirlerimize tüm içecek çeşitlerinde anında <strong>%15 indirim</strong> uygulanır!
+          </div>
+        </div>
+
+        <!-- Kategori Sekmeleri -->
+        <div class="menu-tabs-nav" role="tablist" aria-label="Menü Kategorileri">
+          <button class="tab-btn active" data-category="sicak-kahveler" role="tab" aria-selected="true">
+            Sıcak Kahveler
+          </button>
+          <button class="tab-btn" data-category="soguk-icecekler" role="tab" aria-selected="false">
+            Soğuk İçecekler
+          </button>
+          <button class="tab-btn" data-category="cay-ve-digerleri" role="tab" aria-selected="false">
+            Çay & Diğerleri
+          </button>
+          <button class="tab-btn" data-category="tatlilar-ve-atistirmaliklar" role="tab" aria-selected="false">
+            Tatlılar & Atıştırmalıklar
+          </button>
+        </div>
+
+        <!-- Menü Kartları Listesi -->
+        <div class="menu-cards-container" id="menuCardsWrap">
+
+          <!-- Sıcak Kahveler -->
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Espresso</h3>
+              <p class="item-description">Tek kökenli taze çekirdekten, yoğun gövdeli ve zengin kremalı.</p>
+            </div>
+            <div class="item-price">110 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Americano</h3>
+              <p class="item-description">Sıcak su ile dengelenmiş çift shot espresso, uzun süreli odaklanma için ideal.</p>
+            </div>
+            <div class="item-price">140 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Latte</h3>
+              <p class="item-description">Kadifemsi sıcak süt kreması ve taze espresso lezzeti.</p>
+            </div>
+            <div class="item-price">165 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Flat White</h3>
+              <p class="item-description">Daha yoğun kahve aroması arayanlar için ince dokulu sütle hazırlanan duble ristretto.</p>
+            </div>
+            <div class="item-price">175 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Filtre Kahve</h3>
+              <p class="item-description">Günün taze demlenmiş özel harmanı; berrak, dengeli ve aromatik.</p>
+            </div>
+            <div class="item-price">145 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="sicak-kahveler">
+            <div class="item-main">
+              <h3 class="item-name">Türk Kahvesi</h3>
+              <p class="item-description">Taze çekilmiş geleneksel kahve, lokum ve su ikramı ile.</p>
+            </div>
+            <div class="item-price">110 ₺</div>
+          </div>
+
+          <!-- Soğuk İçecekler -->
+          <div class="menu-item-card" data-category="soguk-icecekler" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Iced Latte</h3>
+              <p class="item-description">Buz, taze soğuk süt ve espresso katmanlarının ferahlatıcı uyumu.</p>
+            </div>
+            <div class="item-price">175 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="soguk-icecekler" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Cold Brew</h3>
+              <p class="item-description">Özel soğuk demleme yöntemiyle 16 saatte dinlendirilen düşük asiditeli sert kahve.</p>
+            </div>
+            <div class="item-price">185 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="soguk-icecekler" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Ev Yapımı Limonata</h3>
+              <p class="item-description">Taze sıkılmış limon suyu, nane yaprakları ve hafif pancar şekeri dengesi.</p>
+            </div>
+            <div class="item-price">120 ₺</div>
+          </div>
+
+          <!-- Çay ve Diğerleri -->
+          <div class="menu-item-card" data-category="cay-ve-digerleri" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Demleme Çay</h3>
+              <p class="item-description">Karadeniz'in taze birinci hasat yapraklarından geleneksel ince belli bardakta.</p>
+            </div>
+            <div class="item-price">45 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="cay-ve-digerleri" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Chai Latte</h3>
+              <p class="item-description">Tarçın, zencefil, karanfil ve kakule baharatları ile buharda ısıtılmış süt.</p>
+            </div>
+            <div class="item-price">160 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="cay-ve-digerleri" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Sıcak Çikolata</h3>
+              <p class="item-description">Eritilmiş gerçek çikolata ve sıcak sütün yoğun, kıvamlı birlikteliği.</p>
+            </div>
+            <div class="item-price">155 ₺</div>
+          </div>
+
+          <!-- Tatlılar ve Atıştırmalıklar -->
+          <div class="menu-item-card" data-category="tatlilar-ve-atistirmaliklar" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">San Sebastian Cheesecake</h3>
+              <p class="item-description">İçi akışkan, hafif yanık kabuklu, her sabah kafemizin mutfağında fırınlanan imza lezzet.</p>
+            </div>
+            <div class="item-price">220 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="tatlilar-ve-atistirmaliklar" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Brownie</h3>
+              <p class="item-description">Gerçek Belçika çikolatalı, hafif ceviz parçacıklı nemli kek dilimi.</p>
+            </div>
+            <div class="item-price">150 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="tatlilar-ve-atistirmaliklar" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Çikolatalı Kurabiye</h3>
+              <p class="item-description">Dışı çıtır, içi yumuşak, bol damla çikolatalı ev yapımı taze kurabiye.</p>
+            </div>
+            <div class="item-price">75 ₺</div>
+          </div>
+
+          <div class="menu-item-card" data-category="tatlilar-ve-atistirmaliklar" style="display: none;">
+            <div class="item-main">
+              <h3 class="item-name">Kaşarlı Tost</h3>
+              <p class="item-description">Ekşi mayalı ekmek arasında bol erimiş kaliteli kaşar peyniri ve zeytin ezmesi dokunuşu.</p>
+            </div>
+            <div class="item-price">170 ₺</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. BÖLÜM: ÇALIŞMA ALANI & GRUP MASASI TALEBİ -->
+    <section class="section-study" id="calisma-alani">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="section-tag">VERİMLİ & SESSİZ ATMOSFER</span>
+          <h2 class="section-title">Çalışma Alanı İmkanları</h2>
+          <p class="section-subtitle">
+            Kütüphanenin sıkıcılığından uzak, klasik kafelerin gürültüsünden arındırılmış; ders çalışmak ve üretmek için tasarlandı.
+          </p>
+        </div>
+
+        <!-- 5 Temel İmkan Kartları -->
+        <div class="study-perks-grid">
+          
+          <div class="perk-card">
+            <div class="perk-card-icon">📵</div>
+            <h3 class="perk-card-title">Sessiz Salon Politikası</h3>
+            <p class="perk-card-desc">Telefon görüşmesi yapılmayan özel sessiz salonumuzda dikkatiniz dağılmadan saatlerce odaklanabilirsiniz.</p>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-card-icon">👥</div>
+            <h3 class="perk-card-title">3 Adet 6 Kişilik Grup Masası</h3>
+            <p class="perk-card-desc">Grup ödevleri, proje hazırlıkları ve arkadaşlarınızla ortak çalışmalar için geniş ve konforlu masalar.</p>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-card-icon">🔌</div>
+            <h3 class="perk-card-title">Her Masada Priz</h3>
+            <p class="perk-card-desc">Dizüstü bilgisayarınız, tabletiniz ve telefonunuz için masaların tamamında kolay erişilebilir elektrik prizleri.</p>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-card-icon">⚡</div>
+            <h3 class="perk-card-title">Hızlı Wi-Fi</h3>
+            <p class="perk-card-desc">Online dersler, araştırma kaynakları ve indirmeler için kesintisiz, hızlı ve stabil internet bağlantısı.</p>
+          </div>
+
+          <div class="perk-card perk-card-highlight">
+            <div class="perk-card-icon">📚</div>
+            <h3 class="perk-card-title">Kitap Değiş Tokuş Rafı</h3>
+            <p class="perk-card-desc">Okuduğunuz bir kitabı getirin, rafımızdan dilediğiniz bir kitabı alın. Paylaşarak büyüyen mini kütüphanemiz.</p>
+          </div>
+
+        </div>
+
+        <!-- GRUP MASASI TALEP FORMU KARTI -->
+        <div class="reservation-card-box" id="rezervasyon">
+          <div class="reservation-grid">
+            
+            <div class="reservation-copy">
+              <span class="sub-badge">EKİBİNLE GEL</span>
+              <h3 class="reservation-title">Grup Masası İçin Talep Gönder</h3>
+              <p class="reservation-info-p">
+                Grup ödevi, sunum hazırlığı veya sınav kampı yapacak arkadaş grupları için masanızı önceden ayırtıyoruz. 
+              </p>
+              
+              <ul class="reservation-notes-list">
+                <li>✓ Masanız 6 kişilik ferah çalışma alanına göre hazırlanır.</li>
+                <li>✓ Formu gönderdiğinizde e-posta uygulamanız hazır mesaj ile açılır.</li>
+                <li>✓ Ekibimiz e-postanızı aldıktan hemen sonra size dönüş yapar.</li>
+              </ul>
+
+              <div class="direct-email-hint">
+                <span>Doğrudan yazmak isterseniz:</span>
+                <a href="mailto:merhaba@imejeloungecafe.com?subject=Grup%20Masas%C4%B1%20Talebi" class="email-direct-link">
+                  merhaba@imejeloungecafe.com
+                </a>
+              </div>
+            </div>
+
+            <!-- Form Alanı -->
+            <div class="reservation-form-container">
+              <form id="groupBookingForm" class="booking-form" novalidate>
+                
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="resName">Ad Soyad <span class="req">*</span></label>
+                    <input type="text" id="resName" name="name" class="form-input" placeholder="Örn: Eren Kaya" required>
+                    <span class="field-error" id="nameError">Lütfen adınızı ve soyadınızı giriniz.</span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="resPhone">Telefon Numarası <span class="req">*</span></label>
+                    <input type="tel" id="resPhone" name="phone" class="form-input" placeholder="Örn: 0532 XXX XX XX" required>
+                    <span class="field-error" id="phoneError">Lütfen telefon numaranızı giriniz.</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="resCount">Kişi Sayısı <span class="req">*</span></label>
+                    <select id="resCount" name="count" class="form-input" required>
+                      <option value="" disabled selected>Seçiniz</option>
+                      <option value="2-3 Kişi">2 - 3 Kişi</option>
+                      <option value="4 Kişi">4 Kişi</option>
+                      <option value="5 Kişi">5 Kişi</option>
+                      <option value="6 Kişi (Grup Masası)">6 Kişi (Grup Masası)</option>
+                    </select>
+                    <span class="field-error" id="countError">Lütfen kişi sayısı seçiniz.</span>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="resDate">Tarih <span class="req">*</span></label>
+                    <input type="date" id="resDate" name="date" class="form-input" required>
+                    <span class="field-error" id="dateError">Lütfen bir tarih seçiniz.</span>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="resTime">Geliş Saati <span class="req">*</span></label>
+                  <input type="time" id="resTime" name="time" class="form-input" required>
+                  <span class="field-error" id="timeError">Lütfen saat seçiniz.</span>
+                </div>
+
+                <div class="form-field">
+                  <label for="resNote">Eklemek İstediğiniz Not (Opsiyonel)</label>
+                  <textarea id="resNote" name="note" class="form-input form-textarea" rows="2" placeholder="Örn: Dizüstü bilgisayarlarımız için prizli köşe tercih ederiz..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-accent btn-block btn-submit" id="btnSubmitReservation">
+                  <span>E-posta Uygulamasıyla Gönder</span>
+                  <span class="btn-arrow">➔</span>
+                </button>
+
+                <!-- Başarı Mesajı Bildirimi -->
+                <div class="form-feedback-box" id="formFeedback" style="display: none;">
+                  <span class="feedback-icon">✓</span>
+                  <div>
+                    <strong>E-posta uygulamanız açıldı!</strong>
+                    <p>Hazırlanan e-postayı onaylayıp gönderdiğinizde talebiniz bize ulaşacaktır.</p>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. BÖLÜM: HAKKIMIZDA -->
+    <section class="section-about" id="hakkimizda">
+      <div class="container">
+        <div class="about-card-wrapper">
+          
+          <div class="about-illustration-side">
+            <div class="about-icon-badge">
+              <span class="badge-year">2024</span>
+              <span class="badge-desc">Kuruluş</span>
+            </div>
+            <div class="about-mini-quote">
+              <p>"Ders çalışırken de kaliteli kahve içilebilecek bir köşe hayaliyle yola çıktık."</p>
+            </div>
+          </div>
+
+          <div class="about-text-side">
+            <span class="section-tag">HİKAYEMİZ & TUTKUMUZ</span>
+            <h2 class="section-title">Hakkımızda</h2>
+            
+            <p class="about-paragraph">
+              İmeje Lounge Cafe, <strong>2024 yılında iki Trabzon Üniversitesi mezunu</strong> tarafından kuruldu. Öğrencilik yıllarımızda vize ve final haftalarında kütüphanelerin soğuk kalabalığı ile klasik kafelerin yüksek müzikli gürültüsü arasında sıkışıp kalmanın zorluğunu bizzat yaşadık.
+            </p>
+            
+            <p class="about-paragraph">
+              Hayalimiz çok basitti: Trabzon'daki öğrenci arkadaşlarımızın hem gerçek ve nitelikli kahve içebileceği hem de laptopunu açıp saatlerce huzurla çalışabileceği samimi bir üçüncü yaşam alanı oluşturmak.
+            </p>
+
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <span class="pillar-icon">☕</span>
+                <div>
+                  <strong>Haftalık Taze Kavrum:</strong> Kahvelerimiz yerel bir kavurucudan her hafta taze olarak temin edilir; bayat çekirdek kullanılmaz.
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-icon">🥐</span>
+                <div>
+                  <strong>Her Sabah Taze Pişen Mutfak:</strong> San Sebastian, brownie ve kurabiyelerimiz her sabah kafemizin kendi fırınında özenle pişirilir.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. BÖLÜM: İLETİŞİM VE ÇALIŞMA SAATLERİ -->
+    <section class="section-contact" id="iletisim">
+      <div class="container">
+        
+        <div class="section-heading-wrap text-center">
+          <span class="section-tag">KOLAY ULAŞIM & SAATLER</span>
+          <h2 class="section-title">İletişim ve Konum</h2>
+          <p class="section-subtitle">
+            Trabzon Söğütlü sahilinde, Trabzon Üniversitesi'ne 5 dakikalık keyifli bir yürüyüş mesafesindeyiz.
+          </p>
+        </div>
+
+        <div class="contact-details-grid">
+          
+          <!-- Adres & Yol Tarifi Kartı -->
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <span class="card-emoji">📍</span>
+              <h3>Adres ve Ulaşım</h3>
+            </div>
+            
+            <p class="address-text">
+              <strong>İmeje Lounge Cafe</strong><br>
+              Söğütlü Mahallesi, Sahil Caddesi<br>
+              Akçaabat / Trabzon
+            </p>
+
+            <div class="proximity-pill">
+              <span>🚶 Trabzon Üniversitesi'ne 5 Dakika Yürüme Mesafesi</span>
+            </div>
+
+            <div class="contact-action-btn">
+              <!-- Google Haritalar Açan Buton -->
+              <a href="https://www.google.com/maps/search/?api=1&query=Söğütlü+Akçaabat+Trabzon+Üniversitesi" target="_blank" rel="noopener noreferrer" class="btn btn-accent btn-block">
+                <span>Google Haritalar'da Yol Tarifi Al</span>
+                <span class="btn-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Çalışma Saatleri Kartı -->
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <span class="card-emoji">🕒</span>
+              <h3>Çalışma Saatleri</h3>
+            </div>
+
+            <div class="hours-list">
+              <div class="hours-row" id="rowWeekday">
+                <span class="day-label">Pazartesi - Cuma</span>
+                <span class="time-label">08:00 - 23:00</span>
+              </div>
+              <div class="hours-row" id="rowSaturday">
+                <span class="day-label">Cumartesi</span>
+                <span class="time-label">09:00 - 23:00</span>
+              </div>
+              <div class="hours-row" id="rowSunday">
+                <span class="day-label">Pazar</span>
+                <span class="time-label">10:00 - 22:00</span>
+              </div>
+            </div>
+
+            <div class="current-status-footer" id="hoursFooterStatus">
+              <span class="status-indicator-dot" id="hoursStatusDot"></span>
+              <span id="hoursStatusText">Saat durumu güncelleniyor...</span>
+            </div>
+          </div>
+
+          <!-- E-posta ve Sosyal Kartı -->
+          <div class="contact-card">
+            <div class="contact-card-header">
+              <span class="card-emoji">✉️</span>
+              <h3>Bize Ulaşın</h3>
+            </div>
+
+            <p class="contact-card-desc">
+              Görüş, öneri veya özel grup rezervasyon sorularınız için bize her zaman yazabilirsiniz.
+            </p>
+
+            <div class="email-box-link">
+              <span class="email-label">Resmi İletişim E-postası:</span>
+              <a href="mailto:merhaba@imejeloungecafe.com" class="main-email-link">
+                merhaba@imejeloungecafe.com
+              </a>
+            </div>
+
+            <div class="welcome-quote">
+              <p>"Sessiz köşen seni bekliyor."</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- KISA VE SADE ALT BİLGİ (FOOTER) -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-workshop-note">
+        Bu site <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #E8B788; text-decoration: underline;"><strong>İMEJE Takımı</strong></a> tarafından <strong>GENÇ2030</strong> atölyesinde üretilmiştir. • <a href="https://imejeteam.com" target="_blank" rel="noopener noreferrer" style="color: #FFFFFF; font-weight: 600;">imejeteam.com ↗</a>
+      </div>
+      <div class="footer-meta">
+        <span>İmeje Lounge Cafe • Trabzon Söğütlü</span>
+        <span>© 2026 Tüm hakları saklıdır.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
