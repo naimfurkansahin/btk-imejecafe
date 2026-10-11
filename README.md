@@ -10,6 +10,7 @@ Bu proje; **BTK Akademi** ve **Gençlik ve Spor Bakanlığı (GSB)** iş birliğ
 ## 🔗 Hızlı Bağlantılar
 
 * 🌐 **İMEJE Takımı Resmi Web Sitesi:** [imejeteam.com](https://imejeteam.com)
+* 🚀 **Canlı Web Sitesi (Netlify):** [btk-imejecafe.netlify.app](https://btk-imejecafe.netlify.app/)
 * 💻 **Proje Kaynak Kodları (GitHub):** [github.com/naimfurkansahin/btk-imejecafe](https://github.com/naimfurkansahin/btk-imejecafe)
 * 📍 **Konum:** Söğütlü Mahallesi, Sahil Caddesi, Akçaabat / Trabzon (Trabzon Üniversitesi Fatih Kampüsü'ne 5 dk yürüme)
 

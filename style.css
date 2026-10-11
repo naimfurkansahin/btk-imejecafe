@@ -477,91 +477,99 @@ h1, h2, h3, h4 {
   padding: 2.75rem 0 4.5rem;
 }
 
-/* ANASAYFA EN BAŞINDAKİ BTK & GSB & İMEJE TEAM EYLEM ÇUBUĞU */
-.homepage-top-action-bar {
+/* ZARİF & DÜZENLİ BTK, GSB VE İMEJE TAKIMI ŞERİDİ */
+.hero-top-strip {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1rem;
-  background: linear-gradient(135deg, #FFFFFF 0%, #F6ECE2 100%);
-  border: 1.5px solid var(--color-caramel);
-  border-radius: var(--radius-md);
-  padding: 0.85rem 1.25rem;
+  gap: 0.85rem;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1.25rem;
   margin-bottom: 2.25rem;
-  box-shadow: 0 4px 18px rgba(160, 82, 45, 0.08);
+  box-shadow: 0 2px 10px rgba(47, 34, 25, 0.04);
 }
 
-.top-bar-left {
+.strip-left {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  font-size: 0.9rem;
+  gap: 0.6rem;
+  font-size: 0.86rem;
   color: var(--text-main);
+  flex-wrap: wrap;
 }
 
 .partner-pulse-dot {
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: var(--color-caramel);
   box-shadow: 0 0 8px rgba(160, 82, 45, 0.6);
   flex-shrink: 0;
-  animation: pulse-dot 2s infinite;
 }
 
-@keyframes pulse-dot {
-  0% { transform: scale(0.9); opacity: 0.7; }
-  50% { transform: scale(1.3); opacity: 1; }
-  100% { transform: scale(0.9); opacity: 0.7; }
+.strip-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--color-caramel-soft);
+  color: var(--color-caramel);
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
 }
 
-.top-bar-buttons {
+.strip-desc {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+}
+
+.strip-right {
   display: flex;
   align-items: center;
-  gap: 0.65rem;
-  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.btn-hero-top {
+.strip-action-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.84rem;
+  gap: 0.35rem;
+  font-size: 0.82rem;
   font-weight: 600;
-  padding: 0.45rem 1rem;
+  color: var(--color-caramel);
+  background: var(--bg-subtle);
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
-  text-decoration: none;
   transition: all var(--transition);
-  white-space: nowrap;
 }
 
-.btn-top-imeje {
+.strip-action-link:hover {
   background-color: var(--color-caramel);
   color: #FFFFFF;
-  box-shadow: 0 2px 10px rgba(160, 82, 45, 0.25);
+  border-color: var(--color-caramel);
+  transform: translateY(-1px);
 }
 
-.btn-top-imeje:hover {
-  background-color: var(--color-caramel-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(160, 82, 45, 0.35);
+.strip-action-link.github-chip {
+  color: var(--text-main);
 }
 
-.btn-top-github {
+.strip-action-link.github-chip:hover {
   background-color: #2F2219;
   color: #FFFFFF;
-  box-shadow: 0 2px 10px rgba(47, 34, 25, 0.2);
+  border-color: #2F2219;
 }
 
-.btn-top-github:hover {
-  background-color: #1A130E;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+.ext-icon {
+  font-size: 0.85rem;
 }
 
-.btn-ext-arrow {
-  font-size: 0.95rem;
+.drawer-links-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.4rem;
 }
 
 .hero-container {
@@ -580,7 +588,7 @@ h1, h2, h3, h4 {
 
 /* Canlı Açık / Kapalı Rozeti */
 .status-badge-container {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .status-badge {
@@ -624,100 +632,18 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 8px rgba(198, 40, 40, 0.5);
 }
 
-/* Başlık ve Yanındaki İMEJE Takımı Grubu */
-.hero-heading-group {
-  margin-bottom: 1.5rem;
-}
-
 .hero-heading {
-  font-size: clamp(2.4rem, 5.5vw, 3.8rem);
+  font-size: clamp(2.4rem, 5.5vw, 4rem);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .hero-heading-italic {
   font-style: italic;
   font-weight: 400;
   color: var(--color-caramel);
-}
-
-/* KOCAMAN İMEJE TAKIMI & GENÇ2030 BANNERI */
-.imeje-prominent-banner {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F5EAE0 100%);
-  border: 2px solid var(--color-caramel);
-  border-radius: var(--radius-md);
-  padding: 1.35rem 1.6rem;
-  margin-bottom: 1.75rem;
-  box-shadow: 0 6px 20px rgba(160, 82, 45, 0.12);
-  transition: transform var(--transition), box-shadow var(--transition);
-}
-
-.imeje-prominent-banner:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(160, 82, 45, 0.18);
-}
-
-.imeje-banner-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  margin-bottom: 0.65rem;
-}
-
-.imeje-badge-pill {
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background-color: var(--color-caramel);
-  color: #FFFFFF;
-  padding: 0.25rem 0.65rem;
-  border-radius: var(--radius-full);
-}
-
-.imeje-team-name {
-  font-family: var(--font-heading);
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--color-sage);
-  letter-spacing: 0.04em;
-}
-
-.imeje-banner-statement {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--text-main);
-  line-height: 1.35;
-  margin-bottom: 1rem;
-}
-
-.imeje-banner-statement strong {
-  color: var(--color-caramel);
-}
-
-.imeje-cta-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
-  width: 100%;
-  background-color: var(--color-caramel);
-  color: #FFFFFF;
-  font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius-full);
-  text-decoration: none;
-  transition: all var(--transition);
-}
-
-.imeje-cta-button:hover {
-  background-color: var(--color-caramel-hover);
-  box-shadow: 0 4px 12px rgba(160, 82, 45, 0.3);
 }
 
 .hero-subtext {
